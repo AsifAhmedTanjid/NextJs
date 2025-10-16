@@ -1,10 +1,8 @@
-export default function BlogPage({ params }) {
-  const { id, title, description } = params;
+export default async function BlogPage({ params }) {
+  const { id } = params;
   return (
     <>
-      <div>Blog Id: {params.id}</div>
-      <div>Blog Title: {title}</div>
-      <div>Blog Description: {description}</div>
+      <div>Blog Id: {id}</div>
     </>
   );
 }
